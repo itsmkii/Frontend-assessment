@@ -152,7 +152,9 @@
 <script>
     document.querySelector('button[data-bs-target="#contactModal"]').addEventListener('click', function() {
         alert('Thank you for reaching out! We will get back to you soon.');
-    
+        document.getElementById('modalName').textContent = document.getElementById('name').value;
+        document.getElementById('modalEmail').textContent = document.getElementById('email').value;
+        document.getElementById('modalMessage').textContent = document.getElementById('message').value;
 
     });
 </script>
