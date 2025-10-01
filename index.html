@@ -118,8 +118,27 @@
 </form>
 </section>
 
+
 <!-- Modal -->
- 
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Details Info</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p>Name: <span id="modalName"></span></p>
+                <p>Email: <span id="modalEmail"></span></p>
+                <p>Message: <span id="modalMessage"></span></p>
+            </div>
+            <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- //footer -->
 <footer class="bg-light text-center text-lg-start mt-4">
                 <div class="text-center p-3">
@@ -128,7 +147,7 @@
             </footer>
     </div>
 
-<!-- //FUNCTIONALITY FOR THE MODAL -->
+<!-- //Functionality for the modal -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.querySelector('button[data-bs-target="#contactModal"]').addEventListener('click', function() {
